@@ -29,59 +29,64 @@ var filters = {};
 // 3. Use this function to update the filters. 
 function updateFilters() {
 
+    
     // 4a. Save the element that was changed as a variable.
     let changedElement = d3.select(this);
     
     // 4b. Save the value that was changed as a variable.
     let elementValue = changedElement.property("value");
     console.log(elementValue);
-
+    
     // 4c. Save the id of the filter that was changed as a variable.
-    let filterId = changedElement.attr("id");
-    console.log(filterId);
+    let filterID = changedElement.attr("id");
+    console.log(filterID);
   
     // 5. If a filter value was entered then add that filterId and value
     // to the filters list. Otherwise, clear that filter from the filters object.
     if (elementValue) {
-      filters[filterId] = elementValue;
+      filters[filterID] = elementValue;
     }
     else {
-      delete filters[filterId];
+      delete filters[filterID];
     }
-
-    // 6. Call function to apply all filters and rebuild the table
-    filterTable(filters);
   
-  }
+    // 6. Call function to apply all filters and rebuild the table
+    filterTable(); 
   
   // 7. Use this function to filter the table when data is entered.
   function filterTable() {
+    
   
     // 8. Set the filtered data to the tableData.
-    let date = d3.select("#datetime").property("value");
-    let city = d3.select("#city").property("value");
-    let state = d3.select("#state").property("value");
-    let country = d3.select("#country").property("value");
-    let shape = d3.select("#shape").property("value");
-
     let filteredData = tableData;
-
+  
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
-    //if (date && city && state && country && shape) 
-    // for Each value of the array, I want to filter out the value
-    Object.entries(filters).forEach(([key, value]) => {
-      filteredData = filteredData.filter(row => row[key] === value);
-    });
+    data.forEach((dataRow) => {
+      // Append a row to the table body
+      let row = tbody.append("tr");
+      // It's appropriate to use "let" to limit this variable just to this block of code
+      // It's appropriate to use "var" when we want the variable to be available globally, or throughout all code
+      // Loop through each field in the dataRow and add
+      // each value as a table cell (td)
+      Object.values(dataRow).forEach((val) => {
+          let cell = row.append("td");
+          cell.text(val);
+          }
+          // .text(value) means that we are extracting only the text of the value
+      );
+  });
 
-    //else if ()
-  
+    
     // 10. Finally, rebuild the table using the filtered data
     buildTable(filteredData);
-  };
-  
-  // 2. Attach an event to listen for changes to each filter
-  d3.selectAll("input").on("change", updateFilters);
-  
+};
+
+    // 2. Attach an event to listen for changes to each filter
+    d3.selectAll("input").on("change", updateFilters);
+
+
   // Build the table when the page loads
   buildTable(tableData);
+
+}
