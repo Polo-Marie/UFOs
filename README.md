@@ -32,18 +32,19 @@ Once a criteria is entered, the table beside the filter will automatically filte
   - Duration: The length of time the UFO was within sight
   - Comments: These comments describe the visual of the UFO sighting
 
-*When utilizing the website, please remember to use lower capitalization and follow the sample formatting that is in the filter cells!
+*When utilizing the website, please remember to use lower capitalization and follow the sample formatting that is in the filter cells!*
 
 
-**As mentioned, one to several criterias can be inserted to recieve results. 
 
-The following is an example of City: "el cajon" 1/1/2010 and the Shape: "light":
+**As mentioned, one to several criterias can be inserted to recieve results.** 
 
-![](static/images/Filter_Many.png)
+  - The following is an example of City: "el cajon" 1/1/2010 and the Shape: "light":
+
+    ![](static/images/Filter_Many.png)
 
 
-This next example is based solely on the criteria of triangular shaped UFO sightings:
-![](static/images/New_photo.png)
+  - This next example is based solely on the criteria of triangular shaped UFO sightings:
+    ![](static/images/New_photo.png)
 
 
 ### Summary:
