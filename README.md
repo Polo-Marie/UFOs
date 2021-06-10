@@ -12,12 +12,17 @@ The following project was to create a webpage and dynamic table of in-depth anal
   - Country
   - Shape
 
+![](static/images/Website_shot.png)
+
 
 ## Results:
 
 Dana and others can use this new webpage by typing in any one of the 5 criterias either individually or collectively. As we can see from the screenshot, there are examples of the inputs provided for formatting purposes as well. 
 
-Once a criteria is entered, the table beside the filter will automatically filter to the matching results. The matching results in the table includes the following information:
+![](static/images/Filter.png)
+
+
+Once a criteria is entered, the table beside the filter will automatically filter to the matching results. Be sure to use lowercase letters and single spacing between words. The matching results in the table includes the following information:
 
   - Date: Date the UFO was spotted
   - City: The city of the UFO sighting
@@ -27,14 +32,18 @@ Once a criteria is entered, the table beside the filter will automatically filte
   - Duration: The length of time the UFO was within sight
   - Comments: These comments describe the visual of the UFO sighting
 
+*When utilizing the website, please remember to use lower capitalization and follow the sample formatting that is in the filter cells!
 
-As mentioned, one to several criterias can be inserted to recieve results. 
 
-The following is an example of Date: 1/1/2010 and the City: La Mesa:
+**As mentioned, one to several criterias can be inserted to recieve results. 
+
+The following is an example of City: "el cajon" 1/1/2010 and the Shape: "light":
+
+![](static/images/Filter_Many.png)
 
 
 This next example is based solely on the criteria of triangular shaped UFO sightings:
-
+![](static/images/New_photo.png)
 
 
 ### Summary:
