@@ -1,9 +1,7 @@
 # UFOs
 ## The Truth is Out There
 
-### Overview of the analysis:
-Overview of Project: Explain the purpose of this analysis.
-
+### Overview 
 The following project was to create a webpage and dynamic table of in-depth analysis of UFO sightings. The UFO sightings are filtered based on criteria inserted by the user. The user can filter on multiple criteria at once. The following criteria can be filtered:
 
   - Date
